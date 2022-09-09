@@ -10,32 +10,33 @@ class Rectangle:
     def set_height(self, height):
         self.height = height
 
-    def get_area(self, width, height):
-        area = int(width) * int(height)
+    def get_area(self):
+        area = int(self.width) * int(self.height)
         return area
 
-    def get_perimeter(self, width, height):
-        perimeter = (width * 2) + (height * 2)
+    def get_perimeter(self):
+        perimeter = (self.width * 2) + (self.height * 2)
         return perimeter
 
-    def get_diagonal(self, width, height):
-        diagonal = (width ** 2) + (height ** 2) ** 0.5
+    def get_diagonal(self):
+        diagonal = (self.width ** 2) + (self.height ** 2) ** 0.5
         return diagonal
 
-    def get_picture(self, width, height):
+    def get_picture(self):
         picture = ''
         line = ''
         row = 0
         
-        if int(width) > 50 or int(height) > 50 :
+        if int(self.width) > 50 or int(self.height) > 50 :
           return 'Too big for picture'
 
-        while len(line) < int(width):
+        while len(line) < int(self.width):
             line += '*'
 
-        while row != int(height):
+        while row != int(self.height):
             picture += line + '\n'
 
         return picture
       
-    def get_amount_inside(self):
+    def get_amount_inside(self, shape):
+      
