@@ -9,3 +9,7 @@ class Rectangle:
     
   def set_height(self, height):
     self.height = height
+  
+  def get_area(self, width, height):
+    area = int(width) * int(height)
+    return area
