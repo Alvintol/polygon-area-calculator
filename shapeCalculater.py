@@ -15,5 +15,6 @@ class Rectangle:
     return area
   
   def get_perimeter(self, width, height):
-    perimeter = ((width ** 2) + (height ** 2) ** 0.5)
+    perimeter = (width * 2) + (height * 2)
     return perimeter
+  
