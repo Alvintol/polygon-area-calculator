@@ -13,3 +13,7 @@ class Rectangle:
   def get_area(self, width, height):
     area = int(width) * int(height)
     return area
+  
+  def get_perimeter(self, width, height):
+    perimeter = ((width ** 2) + (height ** 2) ** 0.5)
+    return perimeter
