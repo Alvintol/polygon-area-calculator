@@ -18,3 +18,6 @@ class Rectangle:
     perimeter = (width * 2) + (height * 2)
     return perimeter
   
+  def get_diagonal(self, width, height):
+    diagonal = (width ** 2) + (height ** 2) ** 0.5
+    return diagonal
