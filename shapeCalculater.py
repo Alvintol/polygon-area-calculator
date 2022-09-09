@@ -21,3 +21,16 @@ class Rectangle:
   def get_diagonal(self, width, height):
     diagonal = (width ** 2) + (height ** 2) ** 0.5
     return diagonal
+  
+  def get_picture(self, width, height):
+    picture = ''
+    line= ''
+    row = 0
+    
+    while len(line) < int(width):
+      line += '*'
+    
+    while row != int(height):
+      picture += line + '\n'
+    
+    return picture
