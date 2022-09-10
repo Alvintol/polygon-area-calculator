@@ -50,8 +50,10 @@ class Rectangle:
     def __str__(self):
         return f'Rectangle(width={self.width}, height={self.height})'
 
-class Square:
+class Square(Rectangle):
     
     def __init__(self, length):
         self.width = length
         self.height = length
+    
+    
