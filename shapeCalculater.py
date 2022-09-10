@@ -26,9 +26,9 @@ class Rectangle:
         picture = ''
         line = ''
         row = 0
-        
-        if int(self.width) > 50 or int(self.height) > 50 :
-          return 'Too big for picture'
+
+        if int(self.width) > 50 or int(self.height) > 50:
+            return 'Too big for picture'
 
         while len(line) < int(self.width):
             line += '*'
@@ -37,6 +37,12 @@ class Rectangle:
             picture += line + '\n'
 
         return picture
-      
+
     def get_amount_inside(self, shape):
-      
+        widthToFit = 0;
+        heightToFit = 0;
+        
+        widthToFit = int(int(self.width) / int(shape.width)) 
+        heightToFit = int(int(self.height) / int(shape.height)) 
+        
+        return widthToFit * heightToFit
