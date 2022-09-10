@@ -46,3 +46,6 @@ class Rectangle:
         heightToFit = int(int(self.height) / int(shape.height)) 
         
         return widthToFit * heightToFit
+    
+    def __str__(self):
+        return f'Rectangle(width={self.width}, height={self.height})'
